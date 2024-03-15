@@ -7,32 +7,32 @@ function App() {
   let images = [
     {
       num: 1,
-      img: "./img/luffy.png",
+      img: "./img/01akitainu.png",
       isMatched: false
     },
     {
       num: 2,
-      img: "./img/zoro.png",
+      img: "./img/02doberman.png",
       isMatched: false
     },
     {
       num: 3,
-      img: "./img/nami.png",
+      img: "./img/03etoinu.png",
       isMatched: false
     },
     {
       num: 4,
-      img: "./img/sanji.png",
+      img: "./img/04kaiken.png",
       isMatched: false
     },
     {
       num: 5,
-      img: "./img/usopp.png",
+      img: "./img/05papillon.png",
       isMatched: false
     },
     {
       num: 6,
-      img: "./img/chopper.png",
+      img: "./img/06rottweiler.png",
       isMatched: false
     },
   ];
@@ -68,7 +68,7 @@ function App() {
     const allMatched = cards.every(card => card.isMatched);
     if (allMatched) {
       setTimeout(()=>{
-        alert('ゲームクリア！！');
+        alert('ゲームクリア！！おめでとうみーさん！');
       }, 500);
     }
   }, [cards]);
@@ -89,7 +89,7 @@ function App() {
 
       if (tries > 20) {
         setTimeout(() => {
-          alert('ゲームオーバー');
+          alert('ゲームオーバー！残念みーさん');
         }, 500);
       }
     }
